@@ -35,10 +35,13 @@ namespace IDCAEmulatorDataAnalysis
             this.lbl_ThrottleBackTime = new System.Windows.Forms.Label();
             this.txt_ThrottlebackTemp = new System.Windows.Forms.TextBox();
             this.txt_ThrottlebackTime = new System.Windows.Forms.TextBox();
+            this.lbl_accEnergy = new System.Windows.Forms.Label();
+            this.txt_accEnergy = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_selectFile
             // 
+            this.btn_selectFile.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btn_selectFile.Location = new System.Drawing.Point(14, 17);
             this.btn_selectFile.Name = "btn_selectFile";
             this.btn_selectFile.Size = new System.Drawing.Size(104, 26);
@@ -83,11 +86,29 @@ namespace IDCAEmulatorDataAnalysis
             this.txt_ThrottlebackTime.Size = new System.Drawing.Size(92, 23);
             this.txt_ThrottlebackTime.TabIndex = 4;
             // 
+            // lbl_accEnergy
+            // 
+            this.lbl_accEnergy.AutoSize = true;
+            this.lbl_accEnergy.Location = new System.Drawing.Point(14, 130);
+            this.lbl_accEnergy.Name = "lbl_accEnergy";
+            this.lbl_accEnergy.Size = new System.Drawing.Size(84, 15);
+            this.lbl_accEnergy.TabIndex = 5;
+            this.lbl_accEnergy.Text = "Acc. Energy (J)";
+            // 
+            // txt_accEnergy
+            // 
+            this.txt_accEnergy.Location = new System.Drawing.Point(140, 127);
+            this.txt_accEnergy.Name = "txt_accEnergy";
+            this.txt_accEnergy.Size = new System.Drawing.Size(92, 23);
+            this.txt_accEnergy.TabIndex = 6;
+            // 
             // IDCAEmulatorDataAnalysis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 270);
+            this.ClientSize = new System.Drawing.Size(311, 182);
+            this.Controls.Add(this.txt_accEnergy);
+            this.Controls.Add(this.lbl_accEnergy);
             this.Controls.Add(this.txt_ThrottlebackTime);
             this.Controls.Add(this.txt_ThrottlebackTemp);
             this.Controls.Add(this.lbl_ThrottleBackTime);
@@ -109,6 +130,8 @@ namespace IDCAEmulatorDataAnalysis
         private System.Windows.Forms.Label lbl_ThrottleBackTime;
         private System.Windows.Forms.TextBox txt_ThrottlebackTemp;
         private System.Windows.Forms.TextBox txt_ThrottlebackTime;
+        private System.Windows.Forms.Label lbl_accEnergy;
+        private System.Windows.Forms.TextBox txt_accEnergy;
     }
 }
 
